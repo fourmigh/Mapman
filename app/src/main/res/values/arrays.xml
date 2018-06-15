@@ -1,0 +1,27 @@
+<resources>
+    <array name="baike">
+        <item>Random</item>
+        <item>baike.baidu.com</item>
+        <item>baike.com</item>
+        <item>baike.so.com</item>
+    </array>
+
+    <array name="baike_url">
+        <item></item>
+        <item>https://baike.baidu.com/item/</item>
+        <item>http://www.baike.com/wiki/</item>
+        <item>https://baike.so.com/doc/search?word=</item>
+    </array>
+
+    <array name="map_first">
+        <item>World</item>
+        <item>Continents</item>
+        <item>China</item>
+    </array>
+
+    <array name="map_id">
+        <item>world</item>
+        <item>continents</item>
+        <item>cn</item>
+    </array>
+</resources>

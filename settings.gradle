@@ -1,0 +1,22 @@
+include ':app'
+
+include ':SvgMapLibrary'
+project(':SvgMapLibrary').projectDir = new File(settingsDir, '../CaojunLibrary/SvgMapLibrary')
+
+include ':ContactsLibrary'
+project(':ContactsLibrary').projectDir = new File(settingsDir, '../CaojunLibrary/ContactsLibrary')
+
+include ':UtilsLibrary'
+project(':UtilsLibrary').projectDir = new File(settingsDir, '../CaojunLibrary/UtilsLibrary')
+
+include ':ColorLibrary'
+project(':ColorLibrary').projectDir = new File(settingsDir, '../CaojunLibrary/ColorLibrary')
+
+include ':WidgetLibrary'
+project(':WidgetLibrary').projectDir = new File(settingsDir, '../CaojunLibrary/WidgetLibrary')
+
+include ':ImageViewLibrary'
+project(':ImageViewLibrary').projectDir = new File(settingsDir, '../CaojunLibrary/ImageViewLibrary')
+
+include ':PinyinLibrary'
+project(':PinyinLibrary').projectDir = new File(settingsDir, '../CaojunLibrary/PinyinLibrary')

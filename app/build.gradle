@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.sdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "org.caojun.mapman"
+        minSdkVersion 19
+        targetSdkVersion rootProject.ext.sdkVersion
+        versionCode 1
+        versionName "1.0.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:$androidsupport_version"
+    implementation "com.android.support:design:$androidsupport_version"
+    implementation 'com.android.support.constraint:constraint-layout:latest.release'
+    implementation 'org.jetbrains.anko:anko-common:latest.release'
+    implementation 'com.github.zhaokaiqiang.klog:library:latest.release'
+    implementation project(':SvgMapLibrary')
+    implementation project(':ContactsLibrary')
+    implementation project(':UtilsLibrary')
+    implementation project(':ColorLibrary')
+    implementation project(':WidgetLibrary')
+    implementation project(':ImageViewLibrary')
+}
