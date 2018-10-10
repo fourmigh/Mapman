@@ -18,7 +18,7 @@ import org.caojun.color.ColorUtils
 import org.caojun.contacts.Contact
 import org.caojun.contacts.ContactsView
 import org.caojun.dialog.WebViewDialog
-import org.caojun.imageview.ImageLoader
+import org.caojun.imageview.ImageShow
 import org.caojun.svgmap.PathItem
 import org.caojun.svgmap.SvgMapView
 import org.caojun.utils.ActivityUtils
@@ -217,8 +217,8 @@ class MainActivity : AppCompatActivity() {
                 }
 //                WebViewDialog.show(this, getString(resId))
 //                startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(getString(resId))))
-//                ImageLoader.show(this@MainActivity, getString(resId))
-                ImageLoader.show(this@MainActivity, "https://bbs.qn.img-space.com/201803/1/dfd2eb58639be0c55be4802b99b50fb6.jpg")
+                ImageShow.show(this@MainActivity, getString(resId))
+//                ImageShow.show(this@MainActivity, "https://bbs.qn.img-space.com/201803/1/dfd2eb58639be0c55be4802b99b50fb6.jpg")
             }
         }
     }
